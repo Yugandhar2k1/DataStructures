@@ -5,13 +5,13 @@ struct node
     int data;
     struct node *next;
 };
-void PrintLinkedList(struct node *p)
+void PrintLinkedList(struct node* p)
 {
     printf("Linked list elements are: \n");
     while (p != NULL)
     {
         printf("%d ---> ", p ->data);
-        p = p -> data; 
+        p = p -> next; 
     }
     printf("NULL");   
 }
@@ -22,14 +22,16 @@ void main()
     printf("Enter the number of nodes you want to create: ");
     scanf("%d", &node);
 
-    for(int i=0; i<= node; i++)
+    for(int i=0; i<node; i++)
     {
         int data;
         printf("enter the data value for node %d: ", i+1);
         scanf("%d", &data);
 
         struct node *newnode = malloc(sizeof(struct node));
-        if(head == NULL)
+        newnode -> data = data;
+        newnode -> next = NULL;
+        if(head == NULL) 
         {
             head = newnode;
         }
