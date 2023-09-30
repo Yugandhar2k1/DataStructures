@@ -29,8 +29,8 @@ So, when you run this code, it will create a linked list with the values  **12, 
 Then it will print them as follows:
 **12--->13--->14--->15--->NULL**
 
-#Single LinkedList user input:
-You include the necessary header files stdio.h and stdlib.h.
+##Single LinkedList user input:
+<sub>You include the necessary header files stdio.h and stdlib.h.
 You define a **struct node** which represents a node in the singly linked list. It has two members: an integer **data** and a **pointer** to the next node next.
 
 You define a function **PrintLinkedList** that takes a **pointer** to the head of the linked list as a parameter and prints the elements of the linked list.
@@ -57,4 +57,4 @@ The code allows the user to create a linked list of any desired size and then pr
 *enter the data value for node 2: 20
 *enter the data value for node 3: 30
 *Linked list elements are:
-10 ---> 20 ---> 30 ---> NULL
+10 ---> 20 ---> 30 ---> NULL</sub>
