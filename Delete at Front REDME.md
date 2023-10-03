@@ -1,4 +1,4 @@
-## Data Structure Definition
+## Data Structure
 
 - A `struct node` is defined to represent a node in a singly linked list. Each node has two members:
   - An integer `data` to store the data.
